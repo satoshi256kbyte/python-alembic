@@ -9,7 +9,7 @@ phases:
       - pip install awscli
   pre_build:
     commands:
-      - poetry install --no-root --only main
+      - poetry install --no-root
   build:
     commands:
       - alembic upgrade head
