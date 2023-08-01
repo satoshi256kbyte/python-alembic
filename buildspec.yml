@@ -12,4 +12,4 @@ phases:
       - poetry install --no-root
   build:
     commands:
-      - alembic upgrade head
+      - poetry shell && alembic upgrade head
