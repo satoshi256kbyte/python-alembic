@@ -10,6 +10,7 @@ phases:
   pre_build:
     commands:
       - poetry install --no-root
+      - poetry shell
   build:
     commands:
-      - poetry shell && alembic upgrade head
+      - alembic upgrade head
