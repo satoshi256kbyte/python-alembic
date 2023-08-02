@@ -4,7 +4,9 @@ version = "0.1.0"
 description = ""
 authors = ["Satoshi Kaneaysu <satoshi.kaneaysu@serverworks.co.jp>"]
 readme = "README.md"
-packages = [{include = "python_alembic"}]
+packages = [
+  {include = "app/**/*"},
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"

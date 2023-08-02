@@ -6,10 +6,9 @@ phases:
       python: 3.11
     commands:
       - pip install poetry
-      - pip install awscli
   pre_build:
     commands:
-      - poetry install --no-root
+      - poetry install
   build:
     commands:
       - poetry run alembic upgrade head

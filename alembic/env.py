@@ -22,7 +22,6 @@ db_pass = db_connection_dict['db_password']
 db_schema = db_connection_dict['db_schema']
 
 db_connection_string = f"postgresql://{db_user}:{db_pass}@{db_host}:{db_port}/{db_schema}"
-print(db_connection_string)
 
 # `alembic.ini`の`sqlalchemy.url`をパラメータストアから取得した値に置き換える
 config = context.config
